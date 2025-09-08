@@ -248,7 +248,7 @@
         </ul>
 
         <div class="controls">
-          <a id="downloadCV" class="btn btn-ghost" href="assets/AhmedMaher_CV.pdf" target="_blank" data-key="download.cv">Download CV</a>
+          <a id="downloadCV" class="btn btn-ghost" href="AhmedMaher_CV.pdf" target="_blank" data-key="download.cv">Download CV</a>
 
           <select id="langSelect" class="lang-select" aria-label="Select language">
             <option value="en">EN</option>
@@ -410,7 +410,7 @@
 
   <script>
     /* ---------------------------
-       Bilingual content (EN / AR) — UPDATED EXPERIENCE
+       Bilingual content (EN / AR) — UPDATED: image filenames (no assets/) & freelance links added
        --------------------------- */
     const CONTENT = {
       en: {
@@ -434,15 +434,15 @@
         ],
         projectsTitle: 'Projects', projectsSub: 'Selected data analytics projects',
         projects: [
-          { id:'p1', title:'Shipping & Product Performance (Excel)', subtitle:'Interactive Excel dashboard analyzing shipping processes and product performance using Power Query & Power Pivot.', img:'assets/project1-shipping.png', tags:['Excel','Power Query','Power Pivot'], links:[{label:'View Dashboard', href:'assets/project1-shipping.png'}] },
-          { id:'p2', title:'Sales Data Analysis (Python)', subtitle:'Sales analysis for trends, top products, branch performance and revenue impact.', img:'assets/project2-sales.png', tags:['Python','Pandas','Matplotlib','Seaborn'], links:[{label:'View Notebook', href:'https://lnkd.in/dMsE5_eF'},{label:'GitHub Repo', href:'https://lnkd.in/dwa4nDzT'}] },
-          { id:'p3', title:'Interactive Dashboard (Tableau)', subtitle:'Tableau dashboard with multiple visualizations: payments, top products, map, timeseries and price bins.', img:'assets/project3-tableau.png', tags:['Tableau','Data Viz'], links:[{label:'View on Tableau Public', href:'https://lnkd.in/dhGaUygt'}] },
-          { id:'p4', title:'Accident Data Analysis (Python & Tableau)', subtitle:'Comprehensive accident analysis with Python and dashboards for KPIs and maps.', img:'assets/project4-accidents.png', tags:['Python','Pandas','Tableau'], links:[{label:'View Project', href:'https://lnkd.in/ddPmrWgd'}] },
-          { id:'p5', title:'Customer Churn (Power BI)', subtitle:'Power BI solution answering 13 business questions to reduce churn (rate ~26.85%).', img:'assets/project5-churn.png', tags:['Power BI','DAX','Modeling'], links:[{label:'View Dashboard', href:'assets/project5-churn.png'}] },
-          { id:'p6', title:'Marketing Performance (Power BI & Python)', subtitle:'Marketing KPIs analysis (ROAS, CAC, conversion) to identify top channels and campaigns.', img:'assets/project6-marketing.png', tags:['Power BI','Python','Power Query'], links:[{label:'View Dashboard', href:'assets/project6-marketing.png'}] }
+          { id:'p1', title:'Shipping & Product Performance (Excel)', subtitle:'Interactive Excel dashboard analyzing shipping processes and product performance using Power Query & Power Pivot.', img:'project1-shipping.png', tags:['Excel','Power Query','Power Pivot'], links:[{label:'View Dashboard', href:'project1-shipping.png'}] },
+          { id:'p2', title:'Sales Data Analysis (Python)', subtitle:'Sales analysis for trends, top products, branch performance and revenue impact.', img:'project2-sales.png', tags:['Python','Pandas','Matplotlib','Seaborn'], links:[{label:'View Notebook', href:'https://lnkd.in/dMsE5_eF'},{label:'GitHub Repo', href:'https://lnkd.in/dwa4nDzT'}] },
+          { id:'p3', title:'Interactive Dashboard (Tableau)', subtitle:'Tableau dashboard with multiple visualizations: payments, top products, map, timeseries and price bins.', img:'project3-tableau.png', tags:['Tableau','Data Viz'], links:[{label:'View on Tableau Public', href:'https://lnkd.in/dhGaUygt'}] },
+          { id:'p4', title:'Accident Data Analysis (Python & Tableau)', subtitle:'Comprehensive accident analysis with Python and dashboards for KPIs and maps.', img:'project4-accidents.png', tags:['Python','Pandas','Tableau'], links:[{label:'View Project', href:'https://lnkd.in/ddPmrWgd'}] },
+          { id:'p5', title:'Customer Churn (Power BI)', subtitle:'Power BI solution answering 13 business questions to reduce churn (rate ~26.85%).', img:'project5-churn.png', tags:['Power BI','DAX','Modeling'], links:[{label:'View Dashboard', href:'project5-churn.png'}] },
+          { id:'p6', title:'Marketing Performance (Power BI & Python)', subtitle:'Marketing KPIs analysis (ROAS, CAC, conversion) to identify top channels and campaigns.', img:'project6-marketing.png', tags:['Power BI','Python','Power Query'], links:[{label:'View Dashboard', href:'project6-marketing.png'}] }
         ],
         experienceTitle: 'Experience', experienceSub: 'My professional journey',
-        /* UPDATED: removed Tech Company entry, left Freelance starting June 2025 */
+        /* UPDATED: Freelance entry (Jun 2025) */
         experience: [
           { company:'Freelance', title:'Data Analyst (Freelance)', date:'Jun 2025 - Present', bullets:['Customer segmentation & campaign analysis','Automated Excel reports with Power Query','Delivered tailored analytics solutions to clients'] }
         ],
@@ -450,7 +450,12 @@
         contact: [
           { type:'Email', value:'ahmamaher68@gmail.com', href:'mailto:ahmamaher68@gmail.com' },
           { type:'LinkedIn', value:'linkedin.com/in/ahmed-maher-9539891b0', href:'https://www.linkedin.com/in/ahmed-maher-9539891b0/' },
-          { type:'GitHub', value:'github.com/Ahmamaher', href:'https://github.com/Ahmamaher' }
+          { type:'GitHub', value:'github.com/Ahmamaher', href:'https://github.com/Ahmamaher' },
+          // freelance platforms
+          { type:'Mostaql', value:'mostaql.com/profile', href:'https://mostaql.com/account/profile' },
+          { type:'Khamsat', value:'khamsat.com/user/ahma0', href:'https://khamsat.com/user/ahma0' },
+          { type:'Upwork', value:'upwork.com', href:'https://www.upwork.com/freelancers/~01bea10406df186a4f?__cf_chl_rt_tk=qBpNNV_30VnRr8_SVkNlN6LuArO45EhVh2K_PGvC.VE-1756596723-1.0.1.1-bCPf32GqrOEd13CdlSFHj97QsPK8eiwoLpRufGShcag' },
+          { type:'Freelancer', value:'freelancer.com/u/ahmedmaher68', href:'https://www.freelancer.com/u/ahmedmaher68' }
         ],
         footer: { name:'Ahmed Maher', role:'Data Analyst — Python, SQL, Excel, Power BI, Tableau' },
         misc: { downloadLabel:'Download CV', scrollText:'Scroll down', form: { send:'Send Message', labels: { name:'Name', email:'Email', subject:'Subject', message:'Message' } } }
@@ -476,15 +481,14 @@
         ],
         projectsTitle: 'المشاريع', projectsSub: 'أبرز مشاريع تحليل البيانات',
         projects: [
-          { id:'p1', title:'أداء الشحن والمنتجات (Excel)', subtitle:'لوحة Excel تفاعلية لتحليل عمليات الشحن وأداء المنتجات باستخدام Power Query وPower Pivot.', img:'assets/project1-shipping.png', tags:['Excel','Power Query','Power Pivot'], links:[{label:'عرض اللوحة', href:'assets/project1-shipping.png'}] },
-          { id:'p2', title:'تحليل المبيعات (Python)', subtitle:'تحليل بيانات المبيعات لاستخراج رؤى: اتجاهات، أداء الفروع، المنتجات الأكثر مبيعاً وتأثير الإيرادات.', img:'assets/project2-sales.png', tags:['Python','Pandas','Matplotlib','Seaborn'], links:[{label:'عرض النوتبوك', href:'https://lnkd.in/dMsE5_eF'},{label:'مستودع GitHub', href:'https://lnkd.in/dwa4nDzT'}] },
-          { id:'p3', title:'لوحة تفاعلية (Tableau)', subtitle:'لوحة تفاعلية في Tableau تحتوي على عدة تصورات: تحليل الدفع، أفضل المنتجات، الخريطة، والسلاسل الزمنية.', img:'assets/project3-tableau.png', tags:['Tableau','تصميم لوحات'], links:[{label:'عرض على Tableau Public', href:'https://lnkd.in/dhGaUygt'}] },
-          { id:'p4', title:'تحليل حوادث الطرق (Python & Tableau)', subtitle:'تحليل شامل للحوادث: تنظيف البيانات، استكشاف حسب الطقس/المركبة/حالة الطريق، ولوحات تفاعلية.', img:'assets/project4-accidents.png', tags:['Python','Pandas','Tableau'], links:[{label:'عرض المشروع', href:'https://lnkd.in/ddPmrWgd'}] },
-          { id:'p5', title:'تحليل ترك العملاء (Power BI)', subtitle:'حل Power BI أجاب على 13 سؤالاً تجارياً عبر لوحة تفاعلية متعددة الصفحة مع توصيات لخفض معدل ترك العملاء.', img:'assets/project5-churn.png', tags:['Power BI','DAX','نمذجة البيانات'], links:[{label:'عرض اللوحة', href:'assets/project5-churn.png'}] },
-          { id:'p6', title:'تحليل أداء التسويق (Power BI & Python)', subtitle:'تحليل مؤشرات التسويق (ROAS, CAC, معدل التحويل) لتحديد القنوات والحملات الأفضل.', img:'assets/project6-marketing.png', tags:['Power BI','Python','Power Query'], links:[{label:'عرض اللوحة', href:'assets/project6-marketing.png'}] }
+          { id:'p1', title:'أداء الشحن والمنتجات (Excel)', subtitle:'لوحة Excel تفاعلية لتحليل عمليات الشحن وأداء المنتجات باستخدام Power Query وPower Pivot.', img:'project1-shipping.png', tags:['Excel','Power Query','Power Pivot'], links:[{label:'عرض اللوحة', href:'project1-shipping.png'}] },
+          { id:'p2', title:'تحليل المبيعات (Python)', subtitle:'تحليل بيانات المبيعات لاستخراج رؤى: اتجاهات، أداء الفروع، المنتجات الأكثر مبيعاً وتأثير الإيرادات.', img:'project2-sales.png', tags:['Python','Pandas','Matplotlib','Seaborn'], links:[{label:'عرض النوتبوك', href:'https://lnkd.in/dMsE5_eF'},{label:'مستودع GitHub', href:'https://lnkd.in/dwa4nDzT'}] },
+          { id:'p3', title:'لوحة تفاعلية (Tableau)', subtitle:'لوحة تفاعلية في Tableau تحتوي على عدة تصورات: تحليل الدفع، أفضل المنتجات، الخريطة، والسلاسل الزمنية.', img:'project3-tableau.png', tags:['Tableau','تصميم لوحات'], links:[{label:'عرض على Tableau Public', href:'https://lnkd.in/dhGaUygt'}] },
+          { id:'p4', title:'تحليل حوادث الطرق (Python & Tableau)', subtitle:'تحليل شامل للحوادث: تنظيف البيانات، استكشاف حسب الطقس/المركبة/حالة الطريق، ولوحات تفاعلية.', img:'project4-accidents.png', tags:['Python','Pandas','Tableau'], links:[{label:'عرض المشروع', href:'https://lnkd.in/ddPmrWgd'}] },
+          { id:'p5', title:'تحليل ترك العملاء (Power BI)', subtitle:'حل Power BI أجاب على 13 سؤالاً تجارياً عبر لوحة تفاعلية متعددة الصفحة مع توصيات لخفض معدل ترك العملاء.', img:'project5-churn.png', tags:['Power BI','DAX','نمذجة البيانات'], links:[{label:'عرض اللوحة', href:'project5-churn.png'}] },
+          { id:'p6', title:'تحليل أداء التسويق (Power BI & Python)', subtitle:'تحليل مؤشرات التسويق (ROAS, CAC, معدل التحويل) لتحديد القنوات والحملات الأفضل.', img:'project6-marketing.png', tags:['Power BI','Python','Power Query'], links:[{label:'عرض اللوحة', href:'project6-marketing.png'}] }
         ],
         experienceTitle: 'الخبرة العملية', experienceSub: 'سيرتي المهنية',
-        /* UPDATED: removed Tech Company entry, left Freelance starting June 2025 */
         experience: [
           { company:'مشاريع مستقلة', title:'محلل بيانات مستقل', date:'يونيو 2025 - الحاضر', bullets:['تجزئة العملاء وتحليل الحملات','أتمتة تقارير Excel باستخدام Power Query','تقديم حلول تحليلات مخصصة للعملاء'] }
         ],
@@ -492,7 +496,12 @@
         contact: [
           { type:'البريد الإلكتروني', value:'ahmamaher68@gmail.com', href:'mailto:ahmamaher68@gmail.com' },
           { type:'LinkedIn', value:'linkedin.com/in/ahmed-maher-9539891b0', href:'https://www.linkedin.com/in/ahmed-maher-9539891b0/' },
-          { type:'GitHub', value:'github.com/Ahmamaher', href:'https://github.com/Ahmamaher' }
+          { type:'GitHub', value:'github.com/Ahmamaher', href:'https://github.com/Ahmamaher' },
+          // freelance platforms
+          { type:'مستقل', value:'mostaql.com', href:'https://mostaql.com/account/profile' },
+          { type:'خمسات', value:'khamsat.com', href:'https://khamsat.com/user/ahma0' },
+          { type:'Upwork', value:'upwork.com', href:'https://www.upwork.com/freelancers/~01bea10406df186a4f?__cf_chl_rt_tk=qBpNNV_30VnRr8_SVkNlN6LuArO45EhVh2K_PGvC.VE-1756596723-1.0.1.1-bCPf32GqrOEd13CdlSFHj97QsPK8eiwoLpRufGShcag' },
+          { type:'Freelancer', value:'freelancer.com', href:'https://www.freelancer.com/u/ahmedmaher68' }
         ],
         footer: { name:'أحمد ماهر', role:'محلل بيانات — Python, SQL, Excel, Power BI, Tableau' },
         misc: { downloadLabel:'تحميل السيرة', scrollText:'مرر للأسفل', form: { send:'إرسال الرسالة', labels: { name:'الاسم', email:'البريد الإلكتروني', subject:'الموضوع', message:'الرسالة' } } }
@@ -663,7 +672,7 @@
        Helpers
        --------------------------- */
     function escapeHtml(s=''){ return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
-    function getIconForContact(type=''){ const t=(type||'').toLowerCase(); if(t.includes('email')||t.includes('بريد')) return 'fas fa-envelope'; if(t.includes('linkedin')) return 'fab fa-linkedin'; if(t.includes('github')) return 'fab fa-github'; return 'fas fa-address-card'; }
+    function getIconForContact(type=''){ const t=(type||'').toLowerCase(); if(t.includes('email')||t.includes('بريد')) return 'fas fa-envelope'; if(t.includes('linkedin')) return 'fab fa-linkedin'; if(t.includes('github')) return 'fab fa-github'; if(t.includes('khamsat')||t.includes('خمسات')) return 'fas fa-store'; if(t.includes('mostaql')||t.includes('مستقل')) return 'fas fa-briefcase'; if(t.includes('upwork')) return 'fab fa-upwork'; if(t.includes('freelancer')) return 'fas fa-user-tie'; return 'fas fa-address-card'; }
 
     /* ---------------------------
        Language & theme application
