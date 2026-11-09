@@ -1,0 +1,14 @@
+Gross Revenue = SUMX(Orders, Orders[units] * Orders[unit_price_usd])
+Discount Amount = SUMX(Orders, Orders[units] * Orders[unit_price_usd] * Orders[discount_rate])
+Net Revenue = [Gross Revenue] - [Discount Amount]
+COGS = SUMX(Orders, Orders[units] * Orders[unit_cost_usd])
+Shipping Cost = SUM(Orders[shipping_cost_usd])
+Modeled Direct Cost = [COGS] + [Shipping Cost]
+Contribution Profit = [Net Revenue] - [Modeled Direct Cost]
+Contribution Margin = DIVIDE([Contribution Profit], [Net Revenue])
+Order Count = DISTINCTCOUNT(Orders[order_id])
+Units Sold = SUM(Orders[units])
+Average Order Value = DIVIDE([Net Revenue], [Order Count])
+
+-- Excludes marketplace/payment fees, ads, taxes, returns/refunds, FX, and overhead.
+-- Contribution Profit is NOT Net Profit.
